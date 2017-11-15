@@ -1,0 +1,12 @@
+[user]
+	email = ludek.novak@autocont.cz
+	name = Ludek NOVAK
+[alias]
+	l = log --pretty=format:\"%Cgreen%h%Creset %ad %C(cyan)%an%Creset - %s%C(red)%d%Creset\" --graph --date=short
+	ll = log --pretty=format:\"%Cgreen%h%Creset %ad %C(cyan)%an%Creset - %s%C(red)%d%Creset\" --graph --date=short --all
+[push]
+	default = current
+[color]
+	ui = yes
+[rerere]
+	enabled = true
