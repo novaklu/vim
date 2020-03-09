@@ -218,3 +218,11 @@ TSWLatexianTemp*
 
 # expex forward references with \gathertags
 *-tags.tex
+
+# Bash
+.bash_history
+.bash_profile
+
+# Vim
+.viminfo
+_viminfo
