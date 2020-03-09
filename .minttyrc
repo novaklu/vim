@@ -1,0 +1,9 @@
+BoldAsFont=-1
+FontHeight=10
+Rows=55
+Columns=125
+Locale=cs_CZ
+Charset=UTF-8
+ThemeFile=mintty
+Transparency=medium
+Language=@

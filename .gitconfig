@@ -1,12 +1,43 @@
-[user]
-	email = ludek.novak@autocont.cz
+﻿[user]
+	email = ludek.novak@colas.cz
 	name = Ludek NOVAK
 [alias]
-	l = log --pretty=format:\"%Cgreen%h%Creset %ad %C(cyan)%an%Creset - %s%C(red)%d%Creset\" --graph --date=short
+	i = !git init . && git add . && git commit --allow-empty -m \"Initialize repository\"
+	br = branch
+	ca = commit -a
+    co = checkout
+	ci = commit
+	last = log -1 HEAD
+    last5 = log -5 HEAD
+    l = log --pretty=format:\"%Cgreen%h%Creset %ad %C(cyan)%an%Creset - %s%C(red)%d%Creset\" --graph --date=short
 	ll = log --pretty=format:\"%Cgreen%h%Creset %ad %C(cyan)%an%Creset - %s%C(red)%d%Creset\" --graph --date=short --all
+    top = log -10 --pretty=format:\"%Cgreen%h%Creset %ad %C(cyan)%an%Creset - %s%C(red)%d%Creset\" --graph --date=short HEAD
+	st = status
 [push]
 	default = current
 [color]
 	ui = yes
 [rerere]
 	enabled = true
+[merge]
+	tool = vimdiff
+	conflictstyle = diff3
+[mergetool]
+	prompt = false
+	keepBackup = false
+[core]
+    LESSCHARSET=utf-8 less -R
+    safecrlf = false
+[winUpdater]
+	recentlySeenVersion = 2.21.0.windows.1
+[http]
+    #proxy = 10.54.200.13:8080
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[gui]
+	encoding = utf-8
+	recentrepo = C:/Users/novakl1/OneDrive - Colas/Dokumenty/MSGViewer
+	recentrepo = C:/Users/novakl1/OneDrive - Colas/Dokumenty/IPOS-SOFT
