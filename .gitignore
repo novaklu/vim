@@ -226,3 +226,5 @@ TSWLatexianTemp*
 # Vim
 .viminfo
 _viminfo
+/bundle/*
+
