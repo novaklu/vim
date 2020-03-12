@@ -4269,3 +4269,43 @@ vim scripts/install-windows.bat
 vim ~/.vimrc 
 #1583783799
 exit
+#1583783925
+git clone https://github.com/novaklu/vimfiles.git
+#1583784002
+cd vimfiles
+#1583784007
+git st
+#1583784016
+git diff
+#1583784070
+git add .
+#1583784371
+git st
+#1583784380
+git diff
+#1583784397
+git commit 
+#1583784421
+git st
+#1583784432
+git push
+#1583784529
+git l
+#1583784584
+git diff 90106af a3f2513
+#1583785113
+git st
+#1583785122
+git add .
+#1583785138
+git commit 
+#1583785159
+git st
+#1583785167
+git push
+#1583785368
+exit
+#1584004505
+git pull
+#1584004513
+git push
