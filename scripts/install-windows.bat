@@ -10,5 +10,6 @@ mklink /H C:\Users\novakl1\.bashrc  C:\Users\novakl1\vimfiles\.bashrc
 mklink /H C:\Users\novakl1\.gitconfig  C:\Users\novakl1\vimfiles\.gitconfig
 mklink /H C:\Users\novakl1\.viminfo  C:\Users\novakl1\vimfiles\.viminfo
 mklink /H C:\Users\novakl1\.vimrc  C:\Users\novakl1\vimfiles\.vimrc
+mklink /H C:\Users\novakl1\.minttyrc  C:\Users\novakl1\vimfiles\.minttyrc
 mklink /H C:\Users\novakl1\_viminfo  C:\Users\novakl1\vimfiles\_viminfo
 
