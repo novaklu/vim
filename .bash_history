@@ -4309,3 +4309,37 @@ exit
 git pull
 #1584004513
 git push
+#1584011929
+cd ..
+#1584012005
+git st
+#1584012019
+vim .gitignore 
+#1584012039
+git add .
+#1584012041
+git st
+#1584012062
+vim .gitignore 
+#1584012074
+git st
+#1584012084
+git diff
+#1584012090
+git diff head
+#1584012113
+git commit
+#1584012128
+git st
+#1584012133
+git push
+#1584012614
+git pull
+#1584012619
+git st
+#1584014017
+git
+#1584014024
+git st
+#1584014100
+exit

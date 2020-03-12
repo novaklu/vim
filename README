@@ -54,8 +54,18 @@ if !exists("g:os")
     endif
 endif
 
+Termux - prostředí bash na telefonu s androidem
+-------------------------------------------------------------------------------
+Při použití na androidu bohužel nefungují hardlinky. Je nutné soubory kopírovat.
+K tomu slouží dva připravené skripty v adresáři skript.
+    1. install_termux.sh - nakopíruje soubory do domovského adresáře
+    2. backup_termux.sh - nakopíruje soubory do adresáře /vimfiles
+        a. spuštěním je možné zkopírovat soubory
+        b. následně je možné pomocí git diff porovnat změny
+
 Použitá literatura:
 -------------------------------------------------------------------------------
 1) http://www.jiribrejcha.net/2010/08/naucte-se-pracovat-se-symbolickymi-a-pevnymi-odkazy/
 2) https://vi.stackexchange.com/questions/2572/detect-os-in-vimscript
+3) https://github.com/termux/termux-app/issues/513
 
