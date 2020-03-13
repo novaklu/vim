@@ -58,8 +58,10 @@ Termux - prostředí bash na telefonu s androidem
 -------------------------------------------------------------------------------
 Při použití na androidu bohužel nefungují hardlinky. Je nutné soubory kopírovat.
 K tomu slouží dva připravené skripty v adresáři skript.
-    1. install_termux.sh - nakopíruje soubory do domovského adresáře
+
+    1. install_termux.sh - nakopíruje soubory do domovského adresář
     2. backup_termux.sh - nakopíruje soubory do adresáře /vimfiles
+    
         a. spuštěním je možné zkopírovat soubory
         b. následně je možné pomocí git diff porovnat změny
 
