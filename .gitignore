@@ -62,7 +62,7 @@ acs-*.bib
 *.cpt
 
 # elsarticle (documentclass of Elsevier journals)
-*.spl
+#*.spl
 
 # endnotes
 *.ent
