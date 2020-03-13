@@ -19,6 +19,7 @@ Vytvoření hardlinku - konfigurační soubory
 Následně je možné vytvořit hardlinky na konfigurační soubory vim, git a bash.
 Provádí se to následujícími příkazy:
 
+```
 mklink /H C:\Users\novakl1\.bash_history  C:\Users\novakl1\vimfiles\.bash_history
 mklink /H C:\Users\novakl1\.bash_profile  C:\Users\novakl1\vimfiles\.bash_profile
 mklink /H C:\Users\novakl1\.bashrc  C:\Users\novakl1\vimfiles\.bashrc
@@ -26,26 +27,33 @@ mklink /H C:\Users\novakl1\.gitconfig  C:\Users\novakl1\vimfiles\.gitconfig
 mklink /H C:\Users\novakl1\.viminfo  C:\Users\novakl1\vimfiles\.viminfo
 mklink /H C:\Users\novakl1\.vimrc  C:\Users\novakl1\vimfiles\.vimrc
 mklink /H C:\Users\novakl1\_viminfo  C:\Users\novakl1\vimfiles\_viminfo
+```
 
 Rozlišení Windows alinux prostředí
 ------------------------------------------------------------------------------
 Následně je možné používat společnou konfiguraci.
 Rozlišení cest pro Windows a Linux je možné provádět pomocí této konstruce:
+
+```
 macunix                 Macintosh version of Vim, using Unix files (OS-X).
 unix                    Unix version of Vim.
 win32                   Win32 version of Vim (MS-Windows 95 and later, 32 or
                          64 bits)
 win32unix               Win32 version of Vim, using Unix files (Cygwin)
+```
 
 And some older (semi-deprecated) systems:
 
+```
 amiga                   Amiga version of Vim.
 os2                     OS/2 version of Vim.
 win16                   Win16 version of Vim (MS-Windows 3.1).
 win32                   Win32 version of Vim (MS-Windows 32 bit).
 win64                   Win64 version of Vim (MS-Windows 64 bit).
 win95                   Win32 version for MS-Windows 95/98/ME.
+```
 
+```bash
 if !exists("g:os")
     if has("win64") || has("win32") || has("win16")
         let g:os = "Windows"
@@ -53,6 +61,7 @@ if !exists("g:os")
         let g:os = substitute(system('uname'), '\n', '', '')
     endif
 endif
+```
 
 Termux - prostředí bash na telefonu s androidem
 -------------------------------------------------------------------------------
