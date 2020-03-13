@@ -34,7 +34,7 @@ mklink /H %HOMEDRIVE%%HOMEPATH%\.vimrc  %HOMEDRIVE%%HOMEPATH%\vimfiles\.vimrc
 mklink /H %HOMEDRIVE%%HOMEPATH%\_viminfo  %HOMEDRIVE%%HOMEPATH%\vimfiles\_viminfo
 ```
 
-Rozlišení Windows alinux prostředí
+Rozlišení Windows a linux prostředí
 ------------------------------------------------------------------------------
 Následně je možné používat společnou konfiguraci.
 Rozlišení cest pro Windows a Linux je možné provádět pomocí této konstruce:
@@ -75,7 +75,6 @@ K tomu slouží dva připravené skripty v adresáři skript.
 
     1. install_termux.sh - nakopíruje soubory do domovského adresář
     2. backup_termux.sh - nakopíruje soubory do adresáře /vimfiles
-    
         a. spuštěním je možné zkopírovat soubory
         b. následně je možné pomocí git diff porovnat změny
 
