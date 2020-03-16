@@ -1,39 +1,6 @@
 README - popis nastavení pro použití ve Windows a git
 ===============================================================================
 
-Vytvoření hardliku - adresář .vim a vimfiles
--------------------------------------------------------------------------------
-V případě používání vim na Windows a zároveň v gitu je možné sloučit adresář .vim a vimfiles.
-Provádí se to z prostředí Windows CMD pomocí sloučení adesářů.
-
-```
-mklink /J %HOMEDRIVE%%HOMEPATH%\.vim %HOMEDRIVE%%HOMEPATH%\vimfiles
-```
-
-Přesun konfiguračního adresáře git
--------------------------------------------------------------------------------
-Přesuneme i konfigurační adresář gitu pro možnost verzování v gitu.
-
-```
-mklink /J %HOMEDRIVE%%HOMEPATH%\vimfiles\.config %HOMEDRIVE%%HOMEPATH%\.config
-mklink /H %HOMEDRIVE%%HOMEPATH%\vimfiles\.config\git\git-prompt.sh  %HOMEDRIVE%%HOMEPATH%\vimfiles\.prompt.sh
-```
-
-Vytvoření hardlinku - konfigurační soubory
--------------------------------------------------------------------------------
-Následně je možné vytvořit hardlinky na konfigurační soubory vim, git a bash.
-Provádí se to následujícími příkazy:
-
-```
-mklink /H %HOMEDRIVE%%HOMEPATH%\.bash_history  %HOMEDRIVE%%HOMEPATH%\vimfiles\.bash_history
-mklink /H %HOMEDRIVE%%HOMEPATH%\.bash_profile  %HOMEDRIVE%%HOMEPATH%\vimfiles\.bash_profile
-mklink /H %HOMEDRIVE%%HOMEPATH%\.bashrc  %HOMEDRIVE%%HOMEPATH%\vimfiles\.bashrc
-mklink /H %HOMEDRIVE%%HOMEPATH%\.gitconfig  %HOMEDRIVE%%HOMEPATH%\vimfiles\.gitconfig
-mklink /H %HOMEDRIVE%%HOMEPATH%\.viminfo  %HOMEDRIVE%%HOMEPATH%\vimfiles\.viminfo
-mklink /H %HOMEDRIVE%%HOMEPATH%\.vimrc  %HOMEDRIVE%%HOMEPATH%\vimfiles\.vimrc
-mklink /H %HOMEDRIVE%%HOMEPATH%\_viminfo  %HOMEDRIVE%%HOMEPATH%\vimfiles\_viminfo
-```
-
 Rozlišení Windows a linux prostředí
 ------------------------------------------------------------------------------
 Následně je možné používat společnou konfiguraci.
@@ -67,6 +34,44 @@ if !exists("g:os")
     endif
 endif
 ```
+
+Windows - vytvoření hardliku - adresář .vim a vimfiles
+-------------------------------------------------------------------------------
+V případě používání vim na Windows a zároveň v gitu je nutné sloučit adresář .vim a vimfiles.
+Provádí se to z prostředí Windows CMD pomocí sloučení adesářů.
+
+```
+mklink /J %HOMEDRIVE%%HOMEPATH%\.vim %HOMEDRIVE%%HOMEPATH%\vimfiles
+```
+
+Přesun konfiguračního adresáře git
+-------------------------------------------------------------------------------
+Přesuneme a sloučíme i konfigurační adresář gitu pro možnost verzování v gitu.
+
+```
+mklink /J %HOMEDRIVE%%HOMEPATH%\vimfiles\.config %HOMEDRIVE%%HOMEPATH%\.config
+mklink /H %HOMEDRIVE%%HOMEPATH%\vimfiles\.config\git\git-prompt.sh  %HOMEDRIVE%%HOMEPATH%\vimfiles\.prompt.sh
+```
+
+Vytvoření hardlinku - konfigurační soubory
+-------------------------------------------------------------------------------
+Následně je možné vytvořit hardlinky na konfigurační soubory vim, git a bash.
+Provádí se to následujícími příkazy:
+
+```
+mklink /H %HOMEDRIVE%%HOMEPATH%\.bash_history  %HOMEDRIVE%%HOMEPATH%\vimfiles\.bash_history
+mklink /H %HOMEDRIVE%%HOMEPATH%\.bash_profile  %HOMEDRIVE%%HOMEPATH%\vimfiles\.bash_profile
+mklink /H %HOMEDRIVE%%HOMEPATH%\.bashrc  %HOMEDRIVE%%HOMEPATH%\vimfiles\.bashrc
+mklink /H %HOMEDRIVE%%HOMEPATH%\.gitconfig  %HOMEDRIVE%%HOMEPATH%\vimfiles\.gitconfig
+mklink /H %HOMEDRIVE%%HOMEPATH%\.viminfo  %HOMEDRIVE%%HOMEPATH%\vimfiles\.viminfo
+mklink /H %HOMEDRIVE%%HOMEPATH%\.vimrc  %HOMEDRIVE%%HOMEPATH%\vimfiles\.vimrc
+mklink /H %HOMEDRIVE%%HOMEPATH%\_viminfo  %HOMEDRIVE%%HOMEPATH%\vimfiles\_viminfo
+```
+
+Linux - nastavení prostředí bash, vim a git
+-------------------------------------------------------------------------------
+V prostředí linuxu provedeme následující vytvoření hardliků.
+
 
 Termux - prostředí bash na telefonu s androidem
 -------------------------------------------------------------------------------
