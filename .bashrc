@@ -5,7 +5,7 @@
 #
 # Načtení formátu příkazového řádku
 #
-PROMPT_COMMAND="source $HOME/vimfiles/.prompt.sh"
+#PROMPT_COMMAND="source $HOME/vimfiles/.prompt.sh"
 
 # Uprava pro praci s historii bash
 # Neuklada do historie
