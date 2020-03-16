@@ -91,15 +91,10 @@ Použitá literatura:
 -------------------------------------------------------------------------------
 1) http://www.jiribrejcha.net/2010/08/naucte-se-pracovat-se-symbolickymi-a-pevnymi-odkazy/
 2) https://vi.stackexchange.com/questions/2572/detect-os-in-vimscript
-<<<<<<< HEAD
-3) https://github.com/termux/termux-app/issues/513
-||||||| f197fa9
-=======
 3) https://github.com/termux/termux-app/issues/513
 4) https://www.zdrojak.cz/clanky/vs-code-pracujeme-s-gitem/
 5) https://www.zdrojak.cz/clanky/jasne-umim-git/ 
 6) https://stackoverflow.com/questions/32186840/git-for-windows-doesnt-execute-my-bashrc-file
 7) https://www.root.cz/clanky/barvy-pro-shell/
 8) https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
->>>>>>> 82a3e7a0916ee112144427bce8e84c401e88def3
 
