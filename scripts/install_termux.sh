@@ -1,4 +1,4 @@
-# install script for Termux
+# install script for termux
 # only copy file to home
 cp -u ~/vimfiles/.bashrc ~/.bashrc
 cp -u ~/vimfiles/.vimrc ~/.vimrc
