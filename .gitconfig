@@ -39,3 +39,13 @@
 	required = true
 [gui]
 	encoding = utf-8
+<<<<<<< HEAD
+||||||| f197fa9
+	recentrepo = C:/Users/novakl1/OneDrive - Colas/Dokumenty/MSGViewer
+	recentrepo = C:/Users/novakl1/OneDrive - Colas/Dokumenty/IPOS-SOFT
+=======
+	recentrepo = C:/Users/novakl1/OneDrive - Colas/Dokumenty/MSGViewer
+	recentrepo = C:/Users/novakl1/OneDrive - Colas/Dokumenty/IPOS-SOFT
+	recentrepo = C:/Users/novakl1/vimfiles
+
+>>>>>>> 82a3e7a0916ee112144427bce8e84c401e88def3

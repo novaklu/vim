@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #
 # Načítá se při spuštění bash
 #
@@ -7,6 +8,18 @@
 #
 PROMPT_COMMAND="source $HOME/vimfiles/.prompt.sh"
 
+||||||| f197fa9
+=======
+#
+# Načítá se při spuštění bash
+#
+
+#
+# Načtení formátu příkazového řádku
+#
+#PROMPT_COMMAND="source $HOME/vimfiles/.prompt.sh"
+
+>>>>>>> 82a3e7a0916ee112144427bce8e84c401e88def3
 # Uprava pro praci s historii bash
 # Neuklada do historie
 #   ignorespace - neulozi prikazy zacinajici mezerou

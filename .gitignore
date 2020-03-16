@@ -62,7 +62,7 @@ acs-*.bib
 *.cpt
 
 # elsarticle (documentclass of Elsevier journals)
-*.spl
+#*.spl
 
 # endnotes
 *.ent
@@ -222,6 +222,8 @@ TSWLatexianTemp*
 # Bash
 .bash_history
 .bash_profile
+.config/git/git-prompt.sh
+
 
 # Vim
 .viminfo
