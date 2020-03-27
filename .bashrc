@@ -117,6 +117,7 @@ prompt_command() {
 
     export PS1="[${USER_COLOR}\u${END}@${PC_COLOR}\h${END}] \t ${HISTORY_COLOR}\! ${DIR_COLOR}\w\n${GIT_COLOR}${PROMPT_COLOR}${PROMPT}${END} "
 }
+PROMPT_COMMAND=prompt_command
 
 if [ "$color_prompt" = yes ]; then
     export PROMPT_COMMAND=prompt_command
