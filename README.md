@@ -102,4 +102,5 @@ Použitá literatura:
 6) https://stackoverflow.com/questions/32186840/git-for-windows-doesnt-execute-my-bashrc-file
 7) https://www.root.cz/clanky/barvy-pro-shell/
 8) https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
+9) https://www.abclinuxu.cz/clanky/navody/unixove-nastroje-2-ls-ln
 
