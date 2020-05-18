@@ -184,6 +184,7 @@ set encoding=utf8
 "set ffs=unix,dos,mac
 " Use Dos as the Windows file type
 set ffs=dos,unix,mac
+set fileencodings=utf-8,cp1250,iso8859-2,latin1
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Files, backups and undo

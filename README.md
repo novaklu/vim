@@ -3,8 +3,9 @@ README - popis nastavení pro použití ve Windows a git
 
 Rozlišení Windows a linux prostředí
 ------------------------------------------------------------------------------
-Následně je možné používat společnou konfiguraci.
-Rozlišení cest pro Windows a Linux je možné provádět pomocí této konstruce:
+Pro používání shodné konfigurace prostředí ve Windows a Linuxu je třeba vytvořit 
+zástupce.Rozlišení cest pro Windows a Linux je možné provádět pomocí následující
+konstruce kódu v souboru .vimrc:
 
 ```
 macunix                 Macintosh version of Vim, using Unix files (OS-X).
@@ -59,19 +60,23 @@ Následně je možné vytvořit hardlinky na konfigurační soubory vim, git a b
 Provádí se to následujícími příkazy:
 
 ```
-mklink /H %HOMEDRIVE%%HOMEPATH%\.bash_history  %HOMEDRIVE%%HOMEPATH%\vimfiles\.bash_history
 mklink /H %HOMEDRIVE%%HOMEPATH%\.bash_profile  %HOMEDRIVE%%HOMEPATH%\vimfiles\.bash_profile
 mklink /H %HOMEDRIVE%%HOMEPATH%\.bashrc  %HOMEDRIVE%%HOMEPATH%\vimfiles\.bashrc
 mklink /H %HOMEDRIVE%%HOMEPATH%\.gitconfig  %HOMEDRIVE%%HOMEPATH%\vimfiles\.gitconfig
-mklink /H %HOMEDRIVE%%HOMEPATH%\.viminfo  %HOMEDRIVE%%HOMEPATH%\vimfiles\.viminfo
 mklink /H %HOMEDRIVE%%HOMEPATH%\.vimrc  %HOMEDRIVE%%HOMEPATH%\vimfiles\.vimrc
-mklink /H %HOMEDRIVE%%HOMEPATH%\_viminfo  %HOMEDRIVE%%HOMEPATH%\vimfiles\_viminfo
 ```
 
 Linux - nastavení prostředí bash, vim a git
 -------------------------------------------------------------------------------
 V prostředí linuxu provedeme následující vytvoření hardliků.
+K tomu slouží připravený skript v adresáři skript.
 
+    1. install_linux.sh - vytvoří hradlinky z domovského adresáře do ~/vimfiles
+
+Odkazy se vytvoří pomocí následujících příkazů:
+```
+
+```
 
 Termux - prostředí bash na telefonu s androidem
 -------------------------------------------------------------------------------
@@ -79,15 +84,6 @@ Při použití na androidu bohužel nefungují hardlinky. Je nutné soubory kop�
 K tomu slouží dva připravené skripty v adresáři skript.
 
     1. install_termux.sh - nakopíruje soubory do domovského adresář
-    2. backup_termux.sh - nakopíruje soubory do adresáře /vimfiles
-        a. spuštěním je možné zkopírovat soubory
-        b. následně je možné pomocí git diff porovnat změny
-
-Termux - prostředí bash na telefonu s androidem
--------------------------------------------------------------------------------
-Při použití na androidu bohužel nefungují hardlinky. Je nutné soubory kopírovat.
-K tomu slouží dva připravené skripty v adresáři skript.
-    1. install_termux.sh - nakopíruje soubory do domovského adresáře
     2. backup_termux.sh - nakopíruje soubory do adresáře /vimfiles
         a. spuštěním je možné zkopírovat soubory
         b. následně je možné pomocí git diff porovnat změny
