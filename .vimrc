@@ -46,8 +46,6 @@
 " Sets no compatitible with vi
 set nocompatible
 
-" Call 
-
 " Sets how many lines of history VIM has to remember
 set history=500
 
@@ -94,7 +92,7 @@ else
     set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/.DS_Store
 endif
 
-" Always show current position
+"Always show current position
 set ruler
 
 " Show actual line and column in files
@@ -174,7 +172,7 @@ if has("gui_running")
     set guioptions-=e
     set t_Co=256
     set guitablabel=%M\ %t
-    set guifont=Consolas:h11
+    set guifont=LiberationMono\ 12
 endif
 
 " Set utf8 as standard encoding and en_US as the standard language
@@ -183,8 +181,16 @@ set encoding=utf8
 " Use Unix as the standard file type
 "set ffs=unix,dos,mac
 " Use Dos as the Windows file type
-set ffs=dos,unix,mac
-set fileencodings=utf-8,cp1250,iso8859-2,latin1
+
+if has("win16") || has("win32") || has("win64")
+    " Use Dos as the Windows file type
+    set ffs=dos,unix,mac
+    set fileencodings=utf-8,cp1250,iso8859-2,latin1
+else
+    " Use Unix as the standard file type
+    set ffs=unix,dos,mac
+    set fileencodings=utf-8,iso8859-2,cp1250,latin1
+endif
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Files, backups and undo
@@ -202,8 +208,6 @@ else
     set backupdir=~/.vim/backups
     set directory=~/.vim/swap
 endif
-
-
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Text, tab and indent related

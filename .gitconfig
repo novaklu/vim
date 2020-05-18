@@ -1,5 +1,5 @@
 ﻿[user]
-	email = ludek.novak@colas.cz
+	email = ludek.novak@gmail.com
 	name = Ludek NOVAK
 [alias]
 	i = !git init . && git add . && git commit --allow-empty -m \"Initialize repository\"
