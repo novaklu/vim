@@ -51,12 +51,13 @@ set indexcirclecolor #00ff00
 set circlecolors {white blue gray blue blue}
 set linkfgcolor blue
 set circleoutlinecolor SystemWindowText
-set geometry(main) 1920x997+0+24
+set web_browser {cmd /c start}
+set geometry(main) 1920x976+0+0
 set geometry(state) zoomed
 set geometry(topwidth) 1920
 set geometry(topheight) 225
 set geometry(pwsash0) "672 1"
 set geometry(pwsash1) "1008 1"
-set geometry(botwidth) 1139
-set geometry(botheight) 767
+set geometry(botwidth) 1439
+set geometry(botheight) 746
 set permviews {}
